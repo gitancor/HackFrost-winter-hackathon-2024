@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Buttons and Inputs */
+.file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.file-upload:hover {
+    background: #0056b3;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Result Card */
+.result-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Slim and Centered Download Button */
+#downloadBtn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 80%;
+    margin: 10px auto;
+    transition: background 0.3s;
+}
+
+#downloadBtn:hover {
+    background: #0056b3;
+}
+
+/* Loading Indicator */
+#loading.hidden, #output.hidden, #downloadBtn.hidden {
+    display: none;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #007BFF;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 20px 25px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button, .file-upload {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #downloadBtn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    button, .file-upload {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #downloadBtn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+}
